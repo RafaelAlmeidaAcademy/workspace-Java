@@ -14,13 +14,14 @@ import sistema.academico.Work_data.Aluno;
 public class VetorAluno {
 
    
-    private final Object[] objetos = new Object[100];
+    private final Aluno[] objetos = new Aluno[100];
     private int totalDeObjetos = 0;
 
-    public void adiciona(Object objeto) {
+    public void adiciona(Aluno objeto) {
         this.garantaEspaco();
         this.objetos[this.totalDeObjetos] = objeto;
         this.totalDeObjetos++;
+        System.out.println("Cadastrado com sucesso!");
     }
 
     public void adiciona(int posicao, Aluno aluno) {
@@ -33,16 +34,18 @@ public class VetorAluno {
         }
         this.objetos[posicao] = aluno;
         this.totalDeObjetos++;
+        System.out.println("Cadastrado com sucesso!");
     }
 
-    public Object pega(int posicao) {
+    public Aluno pega(int posicao) {
         if (!this.posicaoOcupada(posicao)) {
             throw new IllegalArgumentException("Posição inválida");
         }
         return this.objetos[posicao];
     }
 
-    public void remove(int posicao) {
+    public void remove(int posicao) 
+    {
         if (!this.posicaoOcupada(posicao)) {
             throw new IllegalArgumentException("Posição inválida");
         }

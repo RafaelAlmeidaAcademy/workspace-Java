@@ -3,9 +3,9 @@ package sistema.academico.Work_data;
 
 public class Pessoa {
   
-    private String nome;
-    private String telefone;
-    private String endereco;
+    protected String nome;
+    protected String telefone;
+    protected String endereco;
   //--------------------------------------[SETTER'S]------------------------->
     public void setNome(String nome) {
         this.nome = nome;
