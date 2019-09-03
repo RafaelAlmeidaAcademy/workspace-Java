@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class SanduicheStore{
+public abstract class SanduicheStore{
 
     public SimpleSanduicheFactory sanduicheFactory = new SimpleSanduicheFactory();
 
-    public void orderSanduiche(){
+    public Sanduiches orderSanduiche(){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("---------MENU-------");
@@ -33,6 +33,6 @@ public class SanduicheStore{
 
         int box = scan.nextInt();
 
-        sanduicheFactory.createSanduiche(sanduiche, cut, box);
+        return sanduicheFactory.createSanduiche(sanduiche, cut, box);
     }
 }
