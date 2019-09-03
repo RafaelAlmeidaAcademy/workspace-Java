@@ -4,7 +4,7 @@ public class SanduicheStore{
 
     public SimpleSanduicheFactory sanduicheFactory = new SimpleSanduicheFactory();
 
-    public void orderSanduiche(){
+    public Sanduiches orderSanduiche(){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("---------MENU-------");

@@ -2,7 +2,7 @@
 public class SimpleSanduicheFactory{
     public Sanduiches sanduiches;
 
-    public void createSanduiche(int sanduiche, int cut, int box)
+    public Sanduiches createSanduiche(int sanduiche, int cut, int box)
     {
         switch(op)
         {
@@ -23,5 +23,6 @@ public class SimpleSanduicheFactory{
         sanduiches.prepare();
         sanduiches.cut(cut);
         sanduiches.box(box);
+        return sanduiches;
     }
 }
