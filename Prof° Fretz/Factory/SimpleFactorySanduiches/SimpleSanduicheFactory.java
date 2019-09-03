@@ -4,7 +4,7 @@ public class SimpleSanduicheFactory{
 
     public Sanduiches createSanduiche(int sanduiche, int cut, int box)
     {
-        switch(op)
+        switch(sanduiche)
         {
             case 0:
                 sanduiches = new XBacon();
@@ -20,9 +20,9 @@ public class SimpleSanduicheFactory{
                 break;
         }
 
-        sanduiches.prepare();
-        sanduiches.cut(cut);
-        sanduiches.box(box);
-        return sanduiches;
+        this.sanduiches.prepare();
+        this.sanduiches.cut(cut);
+        this.sanduiches.box(box);
+        return this.sanduiches;
     }
 }

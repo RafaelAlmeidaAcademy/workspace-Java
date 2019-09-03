@@ -33,6 +33,6 @@ public class SanduicheStore{
 
         int box = scan.nextInt();
 
-        sanduicheFactory.createSanduiche(sanduiche, cut, box);
+        return sanduicheFactory.createSanduiche(sanduiche, cut, box);
     }
 }
